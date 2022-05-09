@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+/* Art Tangency Creation - 天井創意 CaGe Wei @art-tangency.com */
+
+body.static{background:#E9F7F7;}
+body.static .icon_st{display:block;}
+
+/*
+.headerBasic > li.btn_on {display:none;}
+.headerBasic > li.btn_on > a {padding:5px 10px; line-height:25px; 
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+body.signin .headerBasic > li.btn_on {display:inline-block; position:relative;
+	-webkit-border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; border-radius:5px;}
+body.signin .headerBasic > li.btn_on .icon_nav {cursor:pointer;}
+body.signin .headerBasic > li.btn_on .nav {
+	display:none; width:140px;
+	position:absolute; top:40px; right:0px; background:rgba(0,0,0,0.7); padding:10px; z-index:9;
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;
+}
+body.signin .headerBasic > li.btn_on.active .nav {display:block;}
+body.signin .headerBasic > li.btn_on.active .nav ol li {padding:5px 0px; border-bottom:1px solid #666;}
+body.signin .headerBasic > li.btn_on.active .nav a {color:#fff;}
+*/
+
+
+/* ============= staticheader ============= */
+.staticheader{/*width:100%; min-height:400px; background:url(/images/banner_static.jpg) 50% 50% no-repeat; background-size:cover;
+	position:relative; color:#1B5266; text-align:center; font-size:1em;*/}
+
+/* ============= staticContent ============= */
+.staticContent{width:100%; max-width:800px; margin:0 auto; padding:40px 0; position:relative; box-sizing:border-box;}
+.staticContent .icon_st{width:40px; height:40px; margin:0 auto; background-size:cover;}
+.staticContent .icon_st_about{background:url(/images/icon_mission_people.svg) no-repeat;}
+.staticContent .icon_st_qa{background:url(/images/icon_info1.svg) no-repeat;}
+.staticContent .icon_st_contact{background:url(/images/icon_static_mail.svg) no-repeat;}
+.staticContent .icon_st_rule{background:url(/images/icon_static_rule.svg) no-repeat;}
+.staticContent .icon_st_privacy{background:url(/images/icon_private.svg) no-repeat;}
+.staticContent .icon_st_skill{background:url(/images/icon_static_skill.svg) no-repeat;}
+
+.staticContent h2, .staticContent h3{padding-bottom:40px; text-align:center; color:#1B5266; font-weight:700;}
+.staticContent h3{padding:40px 0; font-size:1.1em;}
+.staticContent h4{padding-bottom:20px; color:#1B5266;}
+.staticContent p {margin-bottom:30px; color:#333;}
+.staticContent p .skillDetail{color:#ff7578; border-bottom:solid 1px #ff7578; cursor:pointer;}
+.staticContent p .skillDetail:hover{border-bottom:solid 1px #ff7578;}
+.staticContent dt{font-size:0.95em; color: #333;}
+.staticContent dd{margin:10px; font-size:0.95em; color: #333;}
+.staticContent table{width:100%; background:#fff; font-size:0.8em; line-height:2em;}
+.staticContent table tr{line-height:33px;}
+.staticContent table td{letter-spacing:1px;}
+.staticContent table td{border:solid 1px #ccc;}
+.staticContent table tr:first-child td:first-child, .staticContent table td{text-align:center;}
+.staticContent table tr:nth-child(odd){background:#E9F7F7;}
+.staticContent table tr:first-child{background:#1B5266; font-size:1.1em; line-height:42px; color:#fff;}
+.staticContent .qaService td:first-child{background:#fff; color:#1B5266;}
+.staticContent .qaService tr:nth-child(odd) td:first-child{background:#E9F7F7;}
+.staticContent .qaService tr:first-child td:first-child{background:#1B5266; color:#fff;}
+.staticContent .qaPrice .member, .staticContent .qaService td.member{color:#FF7578;}
+
+.stContactForm{width:100%; margin:auto;}
+.stContactForm h4{width:100%; margin:10px 0; padding:5px 0px; background:#fff; box-sizing:border-box; font-size:1rem; text-align:center; line-height:40px;}
+.stContactForm h4:last-child{margin:auto; padding:20px 0 0 0; background:none;}
+.stContactForm label{width:20%; display:inline-block; float:left;}
+.stContactForm label span{padding-left:1px; color:#A90039;}
+.stContactForm input, .stContactForm textarea{width:80%; border:none; box-shadow: none;}
+.stContactForm textarea{padding:2px 5px; box-sizing:border-box; vertical-align: initial; border:none; overflow:auto;}
+.staticContent .stContactForm input[type=submit], .staticContent .stContactForm input[type=button]{width:150px; height:46px; display:block; padding:0px 0px 0px 1em; letter-spacing:1em; margin:20px auto 5px;}
+
+.staticError {padding: 80px 0;}
+.staticError h2:first-child{font-size:4em; font-weight:500;}
+.staticError p{width:190px; margin:15px auto; text-align:left;}
+.staticError p a{line-height:25px;}
+
+
+.popContent p {margin-bottom:30px; color:#333;}
+
+/* ============= RWD Setting ============= */
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 980px) {
+	body.static .icon_st{display:none;}
+/*
+	body.signin .headerConts li {display:inline-block;}
+	body.signin .headerBasic > li.btn_on.menu_pres {width: auto; height: 30px; display: inline-block; text-indent: 0; position: relative; margin: 0px 50px;}
+	body.signin .headerBasic > li.btn_on.menu_pres a::after {display: none;}
+	body.signin .headerBasic > li.btn_on.menu_pres a {padding: 0px 5px; line-height: 30px; border: 1px solid #999; margin-top: 5px;}
+	body.signin .headerConts > ul.navBar {display: block;}
+	body.signin .headerBasic > li.btn_on {display: none;}
+*/
+	.staticContent{padding:40px 20px;}
+	.stContactForm{text-align:center; font-size:1em; color:#555; box-sizing:border-box;}
+	.staticError{padding:60px 50px;}
+	
+/*	body.signin .headerConts > ul.navMenu {display:block;}*/
+/*	body.signin .headerConts > ul.navBar {display:block;}*/
+
+}
+
+@media only screen and (max-width: 568px) {
+	.stContactForm label{width:35%;}
+	.stContactForm input, .stContactForm textarea{width:65%;}
+}
+
+@media only screen and (max-width: 375px) {	
+}
+
+@media only screen and (max-width: 350px) {	
+}
