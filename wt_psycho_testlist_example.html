@@ -1,0 +1,364 @@
+
+<!doctype html>
+<html>
+
+<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">  <title>find the one 心理學演算法婚友平台</title>
+  <meta name="keywords" content="Copyright © 2016 闌珊處網路股份有限公司 All Rights Reserved" />
+  <!-- 網頁描述 -->
+  <meta name="description" content="find the one 心理學交友平台，整合全球兩性心理學研究，透過心理測驗，找出 1% 最適合你的人，在交往之前，解析兩人的契合程度，告別相愛容易相處難" />
+  <meta name="Author" content="find the one 心理學演算法婚友平台" />
+  <meta name="copyright" content="Copyright © 2016 闌珊處網路股份有限公司 All Rights Reserved">
+  <!-- iCon圖示 -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- FB  -->
+  <meta property="og:title" content="find the one 心理學演算法婚友平台" />
+  <meta property="og:url" content="http://localhost/wt_psycho_testlist_example.php" />
+  <meta property="og:image" content="https://www.findtheone.com.tw/images/thumbnail.jpg" />
+  <meta property="og:description" content="find the one 心理學交友平台，整合全球兩性心理學研究，透過心理測驗，找出 1% 最適合你的人，在交往之前，解析兩人的契合程度，告別相愛容易相處難" />
+  <meta property="fb:app_id" content="165499196982733" />
+  <!-- CSS -->
+  <link href="css/at_cage.css" rel="stylesheet" type="text/css" />
+  <link href="css/basic_findtheone.css" rel="stylesheet" type="text/css" />
+  <!-- facebook SDK -->
+<script type="text/javascript" src="http://connect.facebook.net/zh_TW/all.js"></script>
+<script type="text/javascript" src="js/sdk_facebook.js"></script></head>
+
+<body class="mypair onSign">
+  <div id="fb-root"></div>
+  <div id="header">
+	<div class="headerConts clear unselectable">
+		<ul class="headerBasic">
+			<li class="logo"><a href="index5.php"></a></li>
+			<li class="subSlogan">見面聊，最真實</li>
+			<!-- 以下已登入 -->
+			<li class="btn_on menu_normal">
+        <a href="wt_psycho_testlist_example.php">我的測驗</a>
+      </li>
+			<li class="btn_on">
+				<i id="icon_nav" class="icon_nav"></i>
+				<!-- <div class="nav">
+					<ol>
+						<li class=""><a href="music_foru.php">點歌紀錄</a></li>
+						<li class=""><a href="present_foru.php">禮物紀錄</a></li>
+						<li class=""><a href="meetchat.php">見面紀錄</a></li>
+						<li class=""><a href="member.php">我的檔案</a></li>
+						<li class=""><a href="setting_pair.php">我的設定</a></li>
+						<li class=""><a class="">登出</a></li>
+					</ol>
+				</div> -->
+			</li>
+			<!--<li class="btn_on menu_logout"><a href="">登出</a></li>-->
+		</ul>
+
+		<ul class="navBar CGt">
+			<li><i></i><i></i><i></i></li>
+		</ul>
+	</div>
+	<div class="subHeader unselectable">
+		<ul class="on">
+			<li class="menu_new">
+				<a href="/C1_newlist.php" class="router-link-active">
+					<p>最新名單</p><i>3</i>
+				</a>
+			</li>
+			<li class="menu_pair">
+				<a href="javascript:void(0)" class="router-link-exact-active router-link-active notApplyBtn">
+					<p>我的朋友</p>
+				</a>
+			</li>
+			<li class="menu_coffee">
+				<a href="javascript:void(0)" class="notApplyBtn">
+					<p>我的約會</p>
+				</a>
+			</li>
+			<li class="menu_paid">
+				<a href="javascript:void(0)" class="notApplyBtn">
+					<p>會員加值</p>
+				</a>
+			</li>
+			<li id="menu_chat" class="menu_chat"><a></a>
+				<div id="chatlistPad" class="chatlistPad headerListPop CG_scorll height_R2">
+					<ul>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/_617695c5e4d23/m_rnstldepshe5.617695c5f41158.51007924.jpg">
+								</div>
+								<div><strong class="online">波波</strong>
+									<p>你好，我是波波</p>
+								</div>
+								<div><span>1 個月前</span></div>
+							</a></li>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/54/bc/1d/cd/bd/m_iiha9gu7818l.5bace515a36db7.33293808.jpg">
+								</div>
+								<div><strong class="online">Charlene</strong>
+									<p>很高興認識你</p>
+								</div>
+								<div><span>7 個月前</span></div>
+							</a></li>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/89/43/7a/43/89/m_9cg3mnbierpq.5bc85f3a529aa4.92575923.jpg">
+								</div>
+								<div><strong class="online">Chi</strong>
+									<p>灑花☆*`'*-.,_☆</p>
+								</div>
+								<div><span>7 個月前</span></div>
+							</a></li>
+						<!---->
+					</ul>
+				</div>
+			</li>
+			<li id="menu_mesg" class="menu_mesg"><a></a>
+				<div id="noticelistPad" class="noticelistPad headerListPop CG_scorll height_R2">
+					<ul>
+						<!---->
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/_620ab1e169387/l_qbrpqjhe1cf1.620ab1e1e7f673.27848506.jpg">
+								</div>
+								<div><strong class="online">Erin Liu</strong>
+									<p>你跟Erin Liu已經成為朋友，快去聊天室敲定見面時間地點吧! </p>
+								</div>
+								<div><span>7 天前</span></div>
+							</a></li>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/_620ab1e169387/l_qbrpqjhe1cf1.620ab1e1e7f673.27848506.jpg">
+								</div>
+								<div><strong class="online">Erin Liu</strong>
+									<p>Erin Liu已讀過你的契合報告</p>
+								</div>
+								<div><span>7 天前</span></div>
+							</a></li>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/_61daba20950f5/l_r15hs64elqh0.61daba20edd1d5.33382663.jpg">
+								</div>
+								<div><strong class="offline">周玟</strong>
+									<p>你跟周玟已經成為朋友，快去聊天室敲定見面時間地點吧! </p>
+								</div>
+								<div><span>7 天前</span></div>
+							</a></li>
+						<li><a href="javascript:void(0)" class="notApplyBtn">
+								<div><img alt="" src="https://www.cdn.meettheone.com.tw/_61daba20950f5/l_r15hs64elqh0.61daba20edd1d5.33382663.jpg">
+								</div>
+								<div><strong class="offline">周玟</strong>
+									<p>周玟已讀過你的契合報告</p>
+								</div>
+								<div><span>7 天前</span></div>
+							</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+	<!-- <div class="popBodyHeader"></div> -->
+</div>  <div id="main">
+
+    <!-- 測驗分類 -->
+    <div class="pageMenu CGt">
+      <ul>
+        <li class="i_report_pair"><a href="testing_main_1report_example.php">配對<br>報告</a></li>
+        <li class="i_report_person"><a href="testing_main_2report_example.php">性格<br>測驗</a></li>
+        <li class="i_report_mylove"><a href="testing_main_3report_example.php">愛之語<br>測驗</a></li>
+        <li class="i_report_lovestyle"><a href="testing_main_5report_example.php">愛情風格<br>測驗</a></li>
+        <li class="i_report_travel"><a href="testing_main_4report_example.php">旅伴<br>報告</a></li>
+      </ul>
+      <ul class="nav"></ul>
+    </div>
+
+    <div class="psychoCount">
+      <div class="psychoTestListPad fix-list">
+        <ul class="toSignup height_R2 has-linkPad">
+          <li class="title">配對測驗</li>
+          <li class="picture"><img alt="" src="images/image_00.jpg" /></li>
+          <li class="name">找出適合你的另一半</li>
+          <li class="script">政大心理系教授、海苔熊推薦，排除95%不適人選，72H約到想見的人</li>
+          <li class="tobeMamber"><a href="testing_main_1report_example.php" class="btn_orange CGc">閱讀報告</a></li>
+          <li class="linkPad">
+            <a class="shareToFB notApplyBtn"></a>
+            <a class="shareToLine notApplyBtn"></a>
+            <a class="getLink notApplyBtn"></a>
+          </li>
+        </ul>
+        <ul class="height_R2 has-linkPad">
+          <li class="title">性格測驗</li>
+<li class="picture"><img alt="" src="images/image_02.jpg" /></li>
+<li class="name">我們其實不太了解自己</li>
+<li class="script">了解一個人最好的方法，就是認識他的性格。心理學家認為，性格是一個人面對周遭世界的態度，透過行為表現出來，別人所認識的你，反映了你的內在心理，想更深入的了解自己嗎？趕快開始這個探索的旅程吧！</li>          <li><a href="testing_main_2report_example.php" class="btn_orange CGc">閱讀報告</a></li>
+          <li class="linkPad">
+            <a class="shareToFB notApplyBtn"></a>
+            <a class="shareToLine notApplyBtn"></a>
+            <a class="getLink notApplyBtn"></a>
+          </li>
+        </ul>
+        <ul class="height_R2 has-linkPad">
+          <li class="title">愛之語測驗</li>
+<li class="picture"><img alt="" src="images/image_03.jpg" /></li>
+<li class="name">為什麼她都說感覺不到我的愛？</li>
+<li class="script">心理學家將愛的表達分成五種，不同的人對於被愛的方式，有不同的偏好，我們常不自覺的用自己喜歡的方式去愛另一半，但卻不是對方想要的方式，所以伴侶常常感覺不到愛，學會愛之語，讓你的付出事半功倍！</li>          <li><a href="testing_main_3report_example.php" class="btn_orange CGc">閱讀報告</a></li>
+          <li class="linkPad">
+            <a class="shareToFB notApplyBtn"></a>
+            <a class="shareToLine notApplyBtn"></a>
+            <a class="getLink notApplyBtn"></a>
+          </li>
+        </ul>
+        <ul class="height_R2 has-linkPad">
+          <li class="title">愛情風格測驗</li>
+<li class="picture"><img alt="" src="images/image_04.jpg" /></li>
+<li class="name">你知道自己的愛情風格嗎？</li>
+<li class="script">心理學家把愛情風格分為八種類型，不同的愛情風格在戀愛關係中會有不同的表現，在戀愛進行的過程中也會有不同的偏好和特質，了解自己的愛情風格有助於看清楚自己的戀愛模式。趕快開始這個重要的測驗吧！</li>          <li><a href="testing_main_5report_example.php" class="btn_orange CGc">閱讀報告</a></li>
+          <li class="linkPad">
+            <a class="shareToFB notApplyBtn"></a>
+            <a class="shareToLine notApplyBtn"></a>
+            <a class="getLink notApplyBtn"></a>
+          </li>
+        </ul>
+        <ul class="height_R2 has-linkPad">
+          <li class="title">旅伴測驗</li>
+<li class="picture"><img alt="" src="images/image_05.jpg" /></li>
+<li class="name">你適合跟誰一起旅行？</li>
+<li class="script">同樣的地方跟不同人去，有很不一樣的感受，你經歷過開心破表的旅行嗎？你曾有過痛苦不堪的旅程嗎？旅伴的好壞差別很大，你的旅行風格是什麼？你適合跟誰一起旅行？現在就開始這個重要的測驗吧！</li>          <li><a href="testing_main_4report_example.php" class="btn_orange CGc">閱讀報告</a></li>
+          <li class="linkPad">
+            <a class="shareToFB notApplyBtn"></a>
+            <a class="shareToLine notApplyBtn"></a>
+            <a class="getLink notApplyBtn"></a>
+          </li>
+        </ul>
+      </div><!-- psychoTestListPad END -->
+
+      <div class="goTest pb-5">
+        <p class="title text-center">▼想擁有自己的報告，快來完成測驗吧▼</p>
+        <div class="btn-box text-center">
+          <a href="#" class="btn btn-sty1">
+            開始心理學測驗 <span class="sp-txt-small">(10分鐘)</span>
+          </a>
+        </div>
+      </div>
+    </div><!-- psychoCount END -->
+
+  </div><!-- main END -->
+
+  <div class="hintContainer">
+    <p>
+      此為範例
+      <a href="index5.php">回到首頁</a>
+    </p>
+  </div>
+
+  <div class="pop-sty-2">
+    <div class="popBlock not-apply">
+      <div class="contentBox">
+        <ul>
+          <li class="title">功能尚未開通</li>
+          <li class="content">
+            <p class="desc text-center">完成心理學測驗 (註冊)<br>即可解鎖完整功能</p>
+            <div class="btn-box text-center">
+              <a href="#" class="btn btn-sty1">
+                開始心理學測驗 <span class="sp-txt-small">(10分鐘)</span>
+              </a>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn-consider popCloseBtn">再考慮一下</button>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="close-btn popCloseBtn">
+          <img src="images/abby/7/close-icon.png" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--Consider makes dummy_footer to be visible as jQuery does not guarantee offset() of hidden elements-->
+<div id="dummy_footer" style="/*visibility:hidden;*/ position:relative; height:1px; width:100%"></div>
+<div id="footer">
+    <div class="footerCont">
+        <ul class="footerMore CGt">
+            <li><a href="static_about.php"><i class="icon_ft_about"></i>關於我們</a></li>
+            <li><a href="static_qa.php"><i class="icon_ft_queation"></i>常見問題</a></li>
+            <!-- <li><a href="static_skill.php"><i class="icon_ft_meetchat"></i>聊天技巧</a></li> -->
+            <li><a href="static_contact.php"><i class="icon_ft_contact"></i>連絡我們</a></li>
+            <li><a href="static_rule.php"><i class="icon_ft_uselaw"></i>使用條款</a></li>
+            <li><a href="static_privacy.php"><i class="icon_ft_private"></i>隱私權政策</a></li>
+        </ul>
+        <ul class="copy"><li><p>版權所有 © 2018 闌珊處網路股份有限公司</p><a href="" class="line"></a><a href="https://www.facebook.com/meettheone1" target="_blank" class="fb"></a><a href="https://medium.com/meettheone" target="_blank" class="medium"></a></li></ul>
+    </div>
+</div>
+<div class="backTop"></div>
+<!-- Loader
+<div class="loadPad"><div class="loader_f"></div></div>  -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min-2.2.4.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/clipboard.js"></script>
+  <!-- <script type="text/javascript" src="js/at_cage_writer.js"></script> -->
+  <script>
+    $(window).load(function() {
+      			var Gww = $(window).width(),
+				$pagePad = $('.pageMenu'),
+				$pageMenu = $('.pageMenu > ul:first-child'),
+				$pageMenuList = $pageMenu.find('li'),
+				$pageMenuLi_w = $pageMenuList.width(),
+				$pageMenu_w = 0,
+				$limit = 0;
+			for (var i=0; i < $pageMenuList.length; i++){
+				$pageMenu_w += $pageMenuList.eq(i).width();
+				$limit = $pageMenu_w - Gww;
+			}
+			if ($limit > 0) {
+				$pagePad.addClass('wipeLR');
+				$('.pageMenu ul.nav').addClass('left');
+				$pageMenu.css({'width':$pageMenu_w+50});
+				$('.pageMenu ul.nav').click(function(){
+					if($(this).hasClass('left')){
+						pageCtrl('Left');
+					}else{
+						pageCtrl('Right');
+					}					
+				 });
+				$pageMenu.touchwipe({
+					wipeLeft: function() {pageCtrl('Left')},
+					wipeRight: function() {pageCtrl('Right')},
+					preventDefaultEvents: true
+				});
+			}else{
+				$pageMenu.css({'text-align':'center'});
+			}
+			function pageCtrl(distan) {
+				var $now = parseInt($pageMenu.css('margin-left'));
+				if (distan === 'Left' && $now >= ( 0 - $limit)) {
+					$('.pageMenu ul.nav').removeClass('left').addClass('right');
+					$pageMenu.stop().animate({marginLeft: Gww - $pageMenu_w - 50});
+				} else if (distan === 'Right' && $now < 0){
+					$('.pageMenu ul.nav').removeClass('right').addClass('left');
+					$pageMenu.stop().animate({marginLeft: 0});
+				}
+			} /* Testing Menu 控制*/
+    })
+
+    $(document).ready(function() {
+
+      // 尚未解鎖視窗 - 開啟和關閉
+      jQuery(document).ready(function($) {
+        // 開啟
+        $('.notApplyBtn').click(function() {
+          $('.popBlock.not-apply').fadeIn();
+        });
+        // 關閉
+        $('.popCloseBtn').click(function() {
+          $('.popBlock').fadeOut();
+        });
+        $(document).click(function(e) {
+          if (e.target.className.includes('popBlock')) {
+            $('.popBlock').fadeOut();
+          }
+        })
+      });
+    });
+
+  </script>
+</body>
+
+</html>
