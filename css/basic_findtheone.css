@@ -19883,6 +19883,14 @@ li>a.btn_orange {
   width: 100%;
 }
 
+.reportDetial .reportChart.topic_XY_normal .container .element > ul.bg.fixed {
+  font-size: 0;
+}
+
+.reportDetial .reportChart.topic_XY_normal .container .element > ul.bg.fixed li {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 991px) {
   .goTest .title {
     font-size: 17px;
